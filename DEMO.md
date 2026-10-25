@@ -20,21 +20,14 @@ No presentar resultados de ejemplo como métricas reales. Antes de la demostraci
 - Protecciones: Bearer, secretos de entorno, límites de entrada, reglas anti-invención, logs sin prompts.
 - Pruebas: seis unitarias (mocks) y evaluación remota editable; no confundir tests de contrato con evaluación semántica.
 
-## 4. Hallazgos y limitaciones (1 min)
-- El streaming inicial está bufferizado: secuencia de eventos correcta pero no incremental en generación.
-- La memoria de continuidad vive en RAM, no es multiinstancia ni duradera.
-- La recuperación léxica puede perder sinónimos; si aumenta el corpus, probar hybrid search y reranking, comparando recall@k.
-- No implementa tool calling externo, WebSockets ni compactación: no atribuir cumplimiento de todo Open Responses.
-- Los controles en el prompt ayudan, pero no garantizan ausencia absoluta de alucinaciones. Evaluar con un dataset anotado.
-
-## 5. Evidencia que conviene mostrar
+## 4. Evidencia que conviene mostrar
 - URL HTTPS accesible con clave de agente (nunca mostrar valor secreto).
 - GitHub público sin `.env` ni datos confidenciales.
 - CI en verde y tests locales.
 - Captura del evaluador de conformidad Open Responses con resultados reales.
 - Latencia p50/p95, número de respuestas sin evidencia, costo estimado real por solicitud, groundedness manual, tasa de errores 4xx/5xx.
 
-## 6. Preguntas Senior y posibles respuestas
+## 5. Preguntas Senior y posibles respuestas
 **¿Por qué no LangGraph?** Para un único flujo de búsqueda y respuesta, un grafo con checkpoints sería complejidad injustificada. Lo añadiría si hubiera tools múltiples, branching, reintentos o aprobaciones humanas.
 
 **¿Por qué no un RAG vectorial?** Para <20-30 secciones verificadas de CV, la recuperación por coincidencia ponderada es interpretable y suficiente como baseline. Mediría fallos de recall antes de invertir en embeddings.

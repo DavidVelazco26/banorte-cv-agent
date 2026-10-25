@@ -1,0 +1,39 @@
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+LLMs/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# Archivos de registro
+*.log
+logs/
+
+# Credenciales y certificados privados
+*.pem
+*.key
+credentials.json
+secrets/
+
+# Configuracion local
+.vscode/
+.idea/
+.DS_Store
+
+# Bases de datos locales
+*.db
+*.sqlite3
+
+# Archivos comprimidos y copias de seguridad
+*.zip
+*.bak

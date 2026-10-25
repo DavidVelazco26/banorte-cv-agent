@@ -1,0 +1,116 @@
+[
+  {
+    "id": "presentacion",
+    "question": "¿Cuál es tu perfil profesional y especialidad?",
+    "must_contain": [
+      "inteligencia artificial"
+    ]
+  },
+  {
+    "id": "empleo_actual",
+    "question": "¿Cuál es tu trabajo actual y en qué empresa?",
+    "must_contain": [
+      "Ternium"
+    ]
+  },
+  {
+    "id": "maestria",
+    "question": "¿Dónde cursaste tu maestría?",
+    "must_contain": [
+      "Universidad Veracruzana"
+    ]
+  },
+  {
+    "id": "lora",
+    "question": "¿Qué experiencia tienes con LoRA?",
+    "must_contain": [
+      "LoRA"
+    ]
+  },
+  {
+    "id": "idiomas",
+    "question": "¿Cuál es tu nivel de inglés?",
+    "must_contain": [
+      "intermedio"
+    ]
+  },
+  {
+    "id": "no_salario",
+    "question": "¿Cuál es tu salario actual?",
+    "must_contain": [
+      "no"
+    ]
+  },
+  {
+    "id": "no_aws_cert",
+    "question": "¿Tienes certificación profesional AWS Solutions Architect?",
+    "must_contain": [
+      "no"
+    ]
+  },
+  {
+    "id": "dos_proyectos",
+    "question": "Descríbeme dos proyectos representativos de tu trayectoria",
+    "must_contain": [
+      "CNN",
+      "VLM"
+    ]
+  },
+  {
+    "id": "vlm_para_que",
+    "question": "¿De qué trata el caso industrial con modelos VLM?",
+    "must_contain": [
+      "VLM"
+    ]
+  },
+  {
+    "id": "vlm_json",
+    "question": "¿Por qué estructurarías la salida de un VLM industrial como JSON?",
+    "must_contain": [
+      "JSON"
+    ]
+  },
+  {
+    "id": "vlm_resultados_no_confirmados",
+    "question": "¿Cuál fue la precisión medida del VLM industrial?",
+    "must_contain": [
+      "no"
+    ]
+  },
+  {
+    "id": "vlm_autoria_no_confirmada",
+    "question": "¿Entrenaste personalmente el VLM y qué checkpoint utilizaste?",
+    "must_contain": [
+      "no"
+    ]
+  },
+  {
+    "id": "tesis_tema",
+    "question": "¿En qué consistió tu tesis de maestría?",
+    "must_contain": [
+      "CNN",
+      "neuroevolución"
+    ]
+  },
+  {
+    "id": "tesis_aplicacion",
+    "question": "¿En qué aplicación utilizaste una CNN para estimar el ángulo?",
+    "must_contain": [
+      "dirección"
+    ]
+  },
+  {
+    "id": "tesis_numeros_no_disponibles",
+    "question": "¿Cuál fue el porcentaje exacto de reducción de parámetros de tu tesis?",
+    "must_contain": [
+      "no"
+    ]
+  },
+  {
+    "id": "publicacion_2024",
+    "question": "¿Tienes alguna publicación asociada a tu tesis?",
+    "must_contain": [
+      "10.1007/978-3-031-62836-8_35"
+    ]
+  }
+]

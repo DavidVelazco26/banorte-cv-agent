@@ -1,0 +1,646 @@
+{
+  "candidate_name": "José David Velazco Muñoz",
+  "headline": "Ingeniero en Mecatrónica y Maestro en Inteligencia Artificial; experiencia en visión artificial, IA generativa e integración industrial.",
+  "language": "es",
+  "sources": [
+    {
+      "id": "profile",
+      "title": "Perfil profesional y trayectoria de José David Velazco Muñoz",
+      "tags": [
+        "perfil",
+        "presentacion",
+        "resumen",
+        "trayectoria",
+        "experiencia",
+        "especialidad",
+        "ingeniero",
+        "inteligencia artificial",
+        "biografia",
+        "curriculum",
+        "cv",
+        "trabajado",
+        "a que te dedicas",
+        "que haces"
+      ],
+      "text": "José David Velazco Muñoz es Ingeniero en Mecatrónica y cuenta con una Maestría en Inteligencia Artificial. Según su CV, tiene experiencia en desarrollo e integración de soluciones de Machine Learning, Deep Learning, visión artificial e IA generativa en entornos industriales. Su trabajo incluye LLMs, VLMs, arquitecturas RAG, adaptación con LoRA y agentes conectados a herramientas mediante MCP. Combina investigación aplicada e ingeniería de software para transformar información documental y visual en resultados estructurados y trazables. Emplea Python, PyTorch y TensorFlow, así como APIs REST para integrar modelos con aplicaciones C#/.NET."
+    },
+    {
+      "id": "current_role",
+      "title": "Experiencia laboral actual: Ingeniero de Visión Artificial e Inteligencia Artificial en Si-Ti | Ternium",
+      "tags": [
+        "experiencia",
+        "trabajo",
+        "empleo",
+        "actual",
+        "puesto",
+        "cargo",
+        "empresa",
+        "ternium",
+        "si-ti",
+        "vision artificial",
+        "ingeniero",
+        "monterrey",
+        "octubre 2024",
+        "trabajado",
+        "trabajas",
+        "trabajos",
+        "trabajaste",
+        "empresas",
+        "donde trabajas"
+      ],
+      "text": "Cargo declarado en el CV: Ingeniero de Visión Artificial e Inteligencia Artificial. Organización: Si-Ti | Ternium, Monterrey, México. Periodo: octubre de 2024 a la actualidad indicada en el CV (edición 2026). Sus áreas de trabajo descritas incluyen IA generativa y agentes; aprendizaje automático y visión artificial; ingeniería de software e integración; y despliegue e infraestructura. El CV no proporciona la fecha exacta de corte ni identifica nominalmente los proyectos industriales."
+    },
+    {
+      "id": "genai_rag",
+      "title": "Experiencia con LLM, RAG, embeddings y recuperación semántica",
+      "tags": [
+        "llm",
+        "llms",
+        "ia generativa",
+        "genai",
+        "rag",
+        "retrieval augmented generation",
+        "embeddings",
+        "documentacion",
+        "documentos",
+        "busqueda",
+        "recuperacion semantica",
+        "modelos de lenguaje"
+      ],
+      "text": "En su experiencia profesional actual declara desarrollo de soluciones con modelos de lenguaje (LLMs) y arquitecturas RAG para consulta de documentación técnica. El enfoque mencionado en el CV utiliza embeddings y recuperación semántica. El CV no especifica el proveedor de LLM, la base de datos vectorial, métricas de retrieval ni detalles de producción de una implementación RAG concreta."
+    },
+    {
+      "id": "vlm",
+      "title": "Experiencia en modelos de visión-lenguaje (VLM) e interpretación de imágenes",
+      "tags": [
+        "vlm",
+        "vlms",
+        "vision lenguaje",
+        "multimodal",
+        "imagenes",
+        "industrial",
+        "prompts",
+        "json",
+        "lenguaje",
+        "inferencia"
+      ],
+      "text": "En su experiencia profesional actual declara integración de modelos de visión-lenguaje (VLMs) para interpretar imágenes industriales. Describe diseño de prompts y validación de resultados estructurados en formato JSON. El CV no identifica los nombres concretos de los modelos VLM ni los datos de una planta, por lo que no deben atribuirse modelos o métricas específicas sin información adicional autorizada."
+    },
+    {
+      "id": "lora_finetuning",
+      "title": "Adaptación de modelos con LoRA y evaluación comparativa",
+      "tags": [
+        "lora",
+        "fine-tuning",
+        "finetuning",
+        "adaptacion",
+        "modelos",
+        "peft",
+        "ajuste",
+        "entrenamiento",
+        "comparacion",
+        "llm",
+        "vlm"
+      ],
+      "text": "El CV declara adaptación de modelos mediante LoRA y evaluación comparativa respecto del modelo base, así como fine-tuning con LoRA y PEFT entre las habilidades técnicas. No especifica datasets, hiperparámetros, valores de métricas ni identificadores de los checkpoints de esos trabajos."
+    },
+    {
+      "id": "agents_mcp",
+      "title": "Agentes de IA, MCP, manejo de estado y recuperación de fallas",
+      "tags": [
+        "agentes",
+        "agente",
+        "mcp",
+        "model context protocol",
+        "herramientas",
+        "tool calling",
+        "function calling",
+        "langgraph",
+        "estado",
+        "errores",
+        "permisos",
+        "validacion"
+      ],
+      "text": "En su experiencia profesional actual describe desarrollo de agentes con manejo de estado y recuperación ante errores, conectados a herramientas mediante Model Context Protocol (MCP), validación de argumentos y control de permisos. En habilidades técnicas menciona LangGraph, function calling y MCP. El CV no detalla arquitectura, endpoints, herramientas específicas ni volumen de uso."
+    },
+    {
+      "id": "ml_deep_learning",
+      "title": "Machine Learning, Deep Learning y entrenamiento de CNN",
+      "tags": [
+        "machine learning",
+        "deep learning",
+        "aprendizaje automatico",
+        "aprendizaje profundo",
+        "cnn",
+        "clasificacion",
+        "deteccion",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "modelos"
+      ],
+      "text": "Desarrolla, entrena y evalúa modelos de Machine Learning y redes neuronales convolucionales (CNN) con Python, PyTorch, TensorFlow y Scikit-learn para clasificación, detección e inspección industrial. Declara ajuste de hiperparámetros y análisis de errores orientados a mejorar desempeño y reducir falsos positivos. No se indican resultados cuantitativos específicos en el CV."
+    },
+    {
+      "id": "datasets_evaluation",
+      "title": "Preparación de datos, validación y evaluación de modelos",
+      "tags": [
+        "dataset",
+        "datasets",
+        "datos",
+        "limpieza",
+        "etiquetado",
+        "preprocesamiento",
+        "aumento",
+        "train",
+        "validacion",
+        "prueba",
+        "evaluacion",
+        "metricas",
+        "errores",
+        "falsos positivos",
+        "hiperparametros"
+      ],
+      "text": "Su CV describe preparación de datasets con limpieza, etiquetado, preprocesamiento y aumento de datos; separación en conjuntos de entrenamiento, validación y prueba; ajuste de hiperparámetros y análisis de errores para disminuir falsos positivos. En herramientas de datos incluye Pandas, NumPy y SciPy. El CV no publica valores de precisión, recall, F1 ni tasas de error para proyectos concretos."
+    },
+    {
+      "id": "computer_vision",
+      "title": "Visión por computadora, OpenCV, OCR y seguimiento de objetos",
+      "tags": [
+        "vision artificial",
+        "vision por computadora",
+        "opencv",
+        "ocr",
+        "imagenes",
+        "procesamiento",
+        "seguimiento de objetos",
+        "camaras",
+        "inspeccion",
+        "flir"
+      ],
+      "text": "Su experiencia incluye implementación de algoritmos de procesamiento de imágenes, reconocimiento óptico de caracteres (OCR) y seguimiento de objetos con OpenCV. También declara conocimiento de cámaras térmicas FLIR e integración industrial en su sección de habilidades. El CV no identifica un sistema de cámara o instalación concreta para cada proyecto."
+    },
+    {
+      "id": "lidar_3d",
+      "title": "Procesamiento de nubes de puntos LiDAR y estimación volumétrica",
+      "tags": [
+        "lidar",
+        "ouster",
+        "sick",
+        "open3d",
+        "nubes de puntos",
+        "3d",
+        "volumetria",
+        "voxelizacion",
+        "segmentacion",
+        "filtrado",
+        "coordenadas",
+        "volumenes"
+      ],
+      "text": "En su experiencia profesional describe procesamiento de nubes de puntos LiDAR procedentes de sensores Ouster y SICK mediante Open3D. Incluye filtrado, segmentación, transformación de coordenadas y estimación de volúmenes mediante voxelización y métodos geométricos. No se documentan métricas de error volumétrico o nombres de proyectos específicos."
+    },
+    {
+      "id": "software_integration",
+      "title": "Ingeniería de software, APIs REST, Python, C#/.NET y WPF",
+      "tags": [
+        "software",
+        "python",
+        "csharp",
+        "c#",
+        ".net",
+        "wpf",
+        "api",
+        "apis",
+        "rest",
+        "fastapi",
+        "flask",
+        "websockets",
+        "integracion",
+        "backend",
+        "json",
+        "sistemas industriales",
+        "contratos"
+      ],
+      "text": "Su CV documenta desarrollo de APIs REST y servicios de inferencia en Python para integrar modelos de IA con aplicaciones C#/.NET y sistemas industriales. Ha desarrollado componentes WPF para adquisición de datos, ejecución de algoritmos y visualización de resultados. También describe definición y documentación de arquitecturas, flujos y contratos de entrada/salida, en colaboración con equipos de automatización y software. Entre las habilidades listadas figuran FastAPI, Flask, JSON, CSV, WebSockets, programación orientada a objetos y TCP/IP."
+    },
+    {
+      "id": "deployment",
+      "title": "Contenedores, infraestructura como código y despliegue de inferencia",
+      "tags": [
+        "docker",
+        "kubernetes",
+        "terraform",
+        "despliegue",
+        "produccion",
+        "infraestructura",
+        "contenedores",
+        "orquestacion",
+        "servidores",
+        "servicios",
+        "devops",
+        "mlops"
+      ],
+      "text": "El CV declara despliegue de servicios de IA en servidores mediante Docker y Kubernetes, con el objetivo de estandarizar dependencias y orquestar contenedores. También declara aprovisionamiento de recursos con infraestructura como código (Terraform). No incluye arquitectura cloud detallada, configuraciones operativas, SLOs ni cifras de tráfico."
+    },
+    {
+      "id": "cinvestav_research",
+      "title": "Experiencia como Asistente de Investigación en Inteligencia Artificial en CINVESTAV",
+      "tags": [
+        "cinvestav",
+        "saltillo",
+        "asistente",
+        "investigacion",
+        "febrero 2024",
+        "marzo 2024",
+        "cnn",
+        "regresion",
+        "automl",
+        "neuroevolucion",
+        "cientifico",
+        "publicaciones"
+      ],
+      "text": "Se desempeñó como Asistente de Investigación en Inteligencia Artificial en CINVESTAV, Saltillo, de febrero de 2024 a marzo de 2024. Desarrolló y evaluó modelos de regresión con redes neuronales convolucionales para análisis de imágenes científicas, incluyendo preparación de datos y validación experimental. Aplicó neuroevolución y AutoML para optimizar arquitecturas neuronales y reducir complejidad computacional, además de participar en investigación y publicaciones relacionadas."
+    },
+    {
+      "id": "thesis",
+      "title": "Tesis de maestría: Reducción de parámetros en una CNN mediante neuroevolución",
+      "tags": [
+        "tesis",
+        "maestria",
+        "neuroevolucion",
+        "cnn",
+        "redes neuronales",
+        "conduccion autonoma",
+        "angulo",
+        "direccion",
+        "parametros",
+        "investigacion",
+        "universidad veracruzana"
+      ],
+      "text": "Título de la tesis de maestría: «Reducción de parámetros en una CNN mediante neuroevolución». Consistió en desarrollar una CNN para estimar el ángulo de dirección en conducción autónoma e implementar neuroevolución para optimizar la arquitectura y reducir el número de parámetros conservando la capacidad predictiva. El PDF del CV vincula el texto de la tesis en https://www.uv.mx/mia/files/2024/11/Tesis-Final-JDVM_22_24.pdf. No se incluyen porcentajes de reducción o comparativas cuantitativas en el CV."
+    },
+    {
+      "id": "masters",
+      "title": "Maestría en Inteligencia Artificial — Universidad Veracruzana",
+      "tags": [
+        "maestria",
+        "posgrado",
+        "universidad veracruzana",
+        "uv",
+        "titulado",
+        "julio 2022",
+        "julio 2024",
+        "formacion",
+        "estudios",
+        "educacion",
+        "donde estudiaste",
+        "estudiaste",
+        "donde cursaste",
+        "universidad",
+        "donde estudie"
+      ],
+      "text": "Maestría en Inteligencia Artificial, Universidad Veracruzana, de julio de 2022 a julio de 2024; estado: titulado. El CV lista aprendizaje automático y profundo (CNN, RNN, LLMs), diseño y evaluación de modelos, visión por computadora, procesamiento de imágenes, análisis de datos, procesamiento del lenguaje natural y herramientas como Python, TensorFlow, PyTorch y Scikit-learn."
+    },
+    {
+      "id": "bachelors",
+      "title": "Ingeniería Mecatrónica — Instituto Tecnológico Superior de Xalapa",
+      "tags": [
+        "licenciatura",
+        "ingenieria",
+        "mecatronica",
+        "instituto tecnologico superior de xalapa",
+        "itsx",
+        "titulado",
+        "agosto 2015",
+        "diciembre 2019",
+        "formacion",
+        "estudios",
+        "donde estudiaste",
+        "estudiaste",
+        "donde cursaste"
+      ],
+      "text": "Ingeniería Mecatrónica, Instituto Tecnológico Superior de Xalapa, de agosto de 2015 a diciembre de 2019; estado: titulado. Formación indicada: programación en C/C++, C# y Python; automatización industrial, robótica y sistemas de control; SCADA e instrumentación industrial; MATLAB, ROS y Arduino."
+    },
+    {
+      "id": "tech_stack",
+      "title": "Habilidades técnicas: lenguajes, Python, frameworks de IA y desarrollo",
+      "tags": [
+        "habilidades",
+        "tecnologias",
+        "tecnicas",
+        "tecnología",
+        "python",
+        "c#",
+        "c++",
+        "bash",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "langchain",
+        "hugging face",
+        "transformers",
+        "fastapi",
+        "flask",
+        "sql"
+      ],
+      "text": "Habilidades técnicas declaradas en el CV: Python, C#, C++, Bash; PyTorch, TensorFlow, Scikit-learn; LLMs, VLMs, RAG, embeddings, recuperación semántica, prompt engineering, LangChain y Hugging Face Transformers; LangGraph, function calling y MCP; fine-tuning con LoRA y PEFT; FastAPI, Flask, APIs REST, formatos JSON y CSV, WebSockets; .NET, WPF, POO, TCP/IP, manejo de errores y documentación. La inclusión en la lista de habilidades no especifica años de experiencia en cada tecnología."
+    },
+    {
+      "id": "data_stack",
+      "title": "Datos, bases de datos y herramientas de análisis",
+      "tags": [
+        "datos",
+        "sql",
+        "postgresql",
+        "mongodb",
+        "pandas",
+        "numpy",
+        "scipy",
+        "bases de datos",
+        "analisis",
+        "csv",
+        "preparacion"
+      ],
+      "text": "La sección de habilidades técnicas del CV enumera Pandas, NumPy, SciPy, SQL, PostgreSQL y MongoDB, además de preparación y aumento de datos, validación y análisis de errores. No especifica años de uso, volúmenes de datos ni arquitectura de una base de datos en particular."
+    },
+    {
+      "id": "cloud_mlops",
+      "title": "Herramientas declaradas de nube y MLOps",
+      "tags": [
+        "aws",
+        "azure",
+        "cloud",
+        "nube",
+        "ci/cd",
+        "mlflow",
+        "dvc",
+        "docker",
+        "kubernetes",
+        "terraform",
+        "mlops",
+        "infraestructura"
+      ],
+      "text": "En habilidades de despliegue y MLOps, el CV enumera Docker, Kubernetes, Terraform, AWS, Azure, CI/CD, MLflow y DVC. En la sección de experiencia laboral se detallan específicamente Docker, Kubernetes y Terraform; no se describen implementaciones concretas de AWS, Azure, MLflow, DVC o un pipeline CI/CD, por lo que no deben inferirse responsabilidades no documentadas."
+    },
+    {
+      "id": "industry_integration",
+      "title": "Integración industrial, instrumentación, IoT y sensores",
+      "tags": [
+        "industrial",
+        "integracion",
+        "sensores",
+        "flir",
+        "symeo",
+        "hmi",
+        "scada",
+        "iot",
+        "mqtt",
+        "ros",
+        "arduino",
+        "lidar",
+        "ouster",
+        "sick"
+      ],
+      "text": "En habilidades de integración industrial se mencionan LiDAR Ouster y SICK, cámaras térmicas FLIR, Symeo, HMI, SCADA, IoT, MQTT, ROS y Arduino. Las actividades específicas de producción para cada plataforma o dispositivo no se describen en el CV."
+    },
+    {
+      "id": "publications_2024",
+      "title": "Publicación declarada 2024: neuroevolución en CNN",
+      "tags": [
+        "publicaciones",
+        "articulos",
+        "investigacion",
+        "2024",
+        "pattern recognition",
+        "cnn",
+        "neuroevolucion",
+        "doi",
+        "angulo"
+      ],
+      "text": "El CV lista como publicación de 2024 «Reducción de parámetros mediante neuroevolución en una CNN para estimación del ángulo de dirección», bajo la referencia «Pattern Recognition». DOI: 10.1007/978-3-031-62836-8_35. La fuente para esta atribución es exclusivamente la referencia consignada en el CV; no se verificaron externamente el tipo de publicación ni los metadatos editoriales."
+    },
+    {
+      "id": "publications_2025",
+      "title": "Publicación declarada 2025: aprendizaje profundo y electrodeposición",
+      "tags": [
+        "publicaciones",
+        "articulos",
+        "investigacion",
+        "2025",
+        "international journal of advanced manufacturing technology",
+        "electrodeposicion",
+        "deep learning",
+        "doi"
+      ],
+      "text": "El CV lista como publicación de 2025 «Identificación del tiempo de electrodeposición mediante aprendizaje profundo», vinculada a International Journal of Advanced Manufacturing Technology. DOI: 10.1007/s00170-025-15671-z. La fuente para esta atribución es la referencia consignada en el CV."
+    },
+    {
+      "id": "certifications",
+      "title": "Certificaciones y cursos declarados",
+      "tags": [
+        "certificaciones",
+        "certificados",
+        "cursos",
+        "kaggle",
+        "machine learning",
+        "deep learning",
+        "sql",
+        "google cloud",
+        "rpa",
+        "fastapi",
+        "flask"
+      ],
+      "text": "El CV enumera en «Certificaciones»: Kaggle (Aprendizaje Automático, Aprendizaje Profundo, SQL), Fundamentos de Google Cloud, RPA y FastAPI/Flask. No indica fechas de emisión, acreditadores para todos los elementos ni enlaces de verificación. No afirma contar con certificaciones profesionales específicas de AWS, Azure o Kubernetes."
+    },
+    {
+      "id": "languages",
+      "title": "Idiomas declarados",
+      "tags": [
+        "idiomas",
+        "español",
+        "ingles",
+        "english",
+        "language",
+        "intermedio",
+        "nativo"
+      ],
+      "text": "Idiomas declarados en el CV: español nativo e inglés intermedio. No se menciona certificación estandarizada del nivel de inglés."
+    },
+    {
+      "id": "professional_links",
+      "title": "Enlaces profesionales públicos",
+      "tags": [
+        "contacto profesional",
+        "linkedin",
+        "github",
+        "repositorio",
+        "redes profesionales",
+        "perfil web"
+      ],
+      "text": "En el PDF del CV se incluyen estos enlaces profesionales: LinkedIn https://www.linkedin.com/in/jos%C3%A9-david-velazco-mu%C3%B1oz-7671911a2/ y GitHub https://github.com/DavidVelazco26. Por privacidad, el dataset público del agente no incluye número telefónico ni correo electrónico personal."
+    },
+    {
+      "id": "project_vlm_scope",
+      "title": "Proyecto 1: análisis industrial mediante VLM — alcance y problema",
+      "tags": [
+        "proyecto 1",
+        "primer proyecto",
+        "VLM",
+        "vision lenguaje",
+        "multimodal",
+        "imagenes industriales",
+        "clasificacion visual",
+        "problema",
+        "caso industrial",
+        "escoria",
+        "pote",
+        "imagen",
+        "casos"
+      ],
+      "text": "Proyecto técnico industrial presentado de forma anonimizada. El problema abordado es interpretar imágenes de un proceso variable y obtener descripciones o estados visuales que puedan consumirse de manera estructurada. La documentación técnica revisada incluye un caso de análisis visual de material caliente; no se divulgan instalaciones, datos operativos, clientes ni imágenes. El CV acredita experiencia general de José David en integración de VLMs, diseño de prompts y validación de resultados JSON, pero no confirma que haya construido personalmente cada módulo de este caso. Fuente: CV 2026 y revisión técnica previa del caso."
+    },
+    {
+      "id": "project_vlm_architecture",
+      "title": "Proyecto 1: arquitectura de referencia VLM, visión artificial y JSON",
+      "tags": [
+        "proyecto 1",
+        "arquitectura",
+        "pipeline",
+        "flujo",
+        "VLM",
+        "Qwen",
+        "prompts",
+        "JSON",
+        "segmentacion",
+        "inferencia",
+        "API",
+        "integracion",
+        "Python",
+        "C#",
+        "calibracion",
+        "procesamiento",
+        "esquema"
+      ],
+      "text": "Como ARQUITECTURA DE REFERENCIA, no como despliegue confirmado de José David, el flujo es: recibir imagen; comprobar calidad y seleccionar región relevante; ejecutar procesamiento de visión o VLM según la tarea; validar el formato JSON contra un esquema; registrar trazabilidad y permitir consumo por API o aplicación empresarial. La clasificación semántica de una escena no sustituye una medición física: estimar nivel o geometría requiere algoritmos adicionales y calibración. En el CV sí figuran integración de VLMs, prompts, JSON, servicios REST, Python y C#/.NET como experiencia general. No consta qué modelo, API, infraestructura o algoritmo preciso usó personalmente en este caso."
+    },
+    {
+      "id": "project_vlm_evaluation",
+      "title": "Proyecto 1: evaluación propuesta para VLM industrial y límites de evidencia",
+      "tags": [
+        "proyecto 1",
+        "VLM",
+        "evaluacion",
+        "metricas",
+        "precision",
+        "recall",
+        "F1",
+        "accuracy",
+        "hallucination",
+        "ground truth",
+        "JSON schema",
+        "latencia",
+        "LoRA",
+        "resultados",
+        "benchmark"
+      ],
+      "text": "No existe en los datos compartidos una métrica NUMÉRICA PUBLICABLE y verificada del proyecto VLM industrial. Para evaluarlo se PROPONEN (no se presentan como resultados medidos): precision, recall y F1 por categoría en un conjunto etiquetado independiente, cumplimiento del esquema JSON, consistencia de descripciones, porcentaje de afirmaciones no fundamentadas, latencia p50/p95 y costo por inferencia. El CV menciona LoRA y comparación con un modelo base a nivel de experiencia general, sin demostrar que ese ajuste fuera parte de este proyecto particular. Deben confirmarse contribución personal, despliegue y resultados antes de afirmarlos."
+    },
+    {
+      "id": "project_vlm_responsibility",
+      "title": "Proyecto 1: participación comprobable, confidencialidad y preguntas difíciles",
+      "tags": [
+        "proyecto 1",
+        "participacion",
+        "responsabilidad",
+        "quien lo hizo",
+        "desarrollaste",
+        "entrenaste",
+        "produccion",
+        "confidencial",
+        "privacidad",
+        "seguridad",
+        "imagenes",
+        "datos"
+      ],
+      "text": "La información disponible muestra participación de José David en la revisión y documentación técnica de un caso VLM industrial. Por separado, su CV declara experiencia general con VLMs, prompts estructurados, LoRA y servicios de inferencia. No permite atribuirle de manera concluyente el entrenamiento del VLM del caso, la programación de todos los algoritmos, ni la operación íntegra en producción. Por confidencialidad, el agente no debe divulgar planta, sensores específicos del caso, series operativas, conjuntos de imágenes, cifras internas o propietarios del proceso. Si preguntan por un aspecto no confirmado, debe señalar explícitamente que no está documentado."
+    },
+    {
+      "id": "project_thesis_scope",
+      "title": "Proyecto 2: tesis CNN para ángulo de dirección y conducción autónoma",
+      "tags": [
+        "proyecto 2",
+        "segundo proyecto",
+        "tesis",
+        "maestria",
+        "conduccion autonoma",
+        "angulo de direccion",
+        "CNN",
+        "Deep Learning",
+        "autonomous driving",
+        "regresion",
+        "neuroevolucion"
+      ],
+      "text": "La tesis de Maestría en Inteligencia Artificial de José David Velazco Muñoz, titulada «Reducción de parámetros en una CNN mediante neuroevolución», se orientó a desarrollar una red neuronal convolucional que estimara el ángulo de dirección a partir de imágenes para un escenario de conducción autónoma. La Maestría fue cursada en la Universidad Veracruzana entre julio de 2022 y julio de 2024; el CV indica grado titulado. La tesis, el enfoque CNN y el objetivo están declarados expresamente en el CV 2026."
+    },
+    {
+      "id": "project_thesis_method",
+      "title": "Proyecto 2: neuroevolución y optimización arquitectónica de una CNN",
+      "tags": [
+        "proyecto 2",
+        "tesis",
+        "metodologia",
+        "algoritmo",
+        "optimizacion",
+        "arquitectura",
+        "neuroevolucion",
+        "CNN",
+        "parametros",
+        "prediccion",
+        "modelo ligero",
+        "Automl",
+        "compresion"
+      ],
+      "text": "El CV describe que para la tesis se desarrolló una CNN para predecir el ángulo de dirección y se empleó neuroevolución para optimizar la arquitectura y reducir el número de parámetros sin perder capacidad predictiva. Neuroevolución se refiere a explorar/evolucionar diseños o parámetros de redes neuronales con métodos evolutivos; el CV NO especifica qué operador genético, codificación, espacio de búsqueda, dataset, framework exacto o configuración de entrenamiento se utilizó. No deben inventarse esos detalles. El CV incluye además formación en diseño, entrenamiento, optimización y evaluación de modelos."
+    },
+    {
+      "id": "project_thesis_evaluation",
+      "title": "Proyecto 2: resultados declarados y métricas pendientes de tesis CNN",
+      "tags": [
+        "proyecto 2",
+        "tesis",
+        "metricas",
+        "resultados",
+        "porcentaje",
+        "cuantos",
+        "parametros",
+        "MAE",
+        "MSE",
+        "latencia",
+        "memoria",
+        "eficiencia",
+        "rendimiento",
+        "benchmarks"
+      ],
+      "text": "El CV describe cualitativamente una reducción de parámetros de la CNN manteniendo capacidad predictiva para estimar ángulo de dirección. No especifica número inicial o final de parámetros, reducción porcentual, error de regresión, latencia ni memoria. Como PLAN DE EVALUACIÓN, no como mediciones realizadas, sería apropiado comparar parámetros antes/después, MAE/MSE del ángulo estimado con partición de prueba, latencia y huella de memoria en el mismo hardware y variabilidad entre ejecuciones. Si se pregunta por cifras, responder que no se encuentran documentadas en la base pública."
+    },
+    {
+      "id": "project_thesis_publication",
+      "title": "Proyecto 2: formación y publicación relacionada con neuroevolución",
+      "tags": [
+        "proyecto 2",
+        "tesis",
+        "publicacion",
+        "articulo",
+        "paper",
+        "doi",
+        "Pattern Recognition",
+        "2024",
+        "universidad",
+        "autoria",
+        "academia",
+        "neuroevolucion"
+      ],
+      "text": "El CV enumera una referencia relacionada con la tesis en 2024: «Reducción de parámetros mediante neuroevolución en una CNN para estimación del ángulo de dirección», identificada en el CV como Pattern Recognition, DOI 10.1007/978-3-031-62836-8_35. Estos datos bibliográficos son los declarados en el CV y aún no han sido cotejados externamente; no afirmar categoría editorial, factor de impacto, autoría específica o métricas del artículo sin consultar la publicación."
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "dataset": "Base de conocimiento pública propuesta para agente CV Banorte",
+  "candidate": "José David Velazco Muñoz",
+  "usage_note": "Los registros distinguen información declarada en el CV, documentación de referencia previamente revisada y posibilidades de evaluación propuestas. Un dato propuesto NO es un resultado ejecutado ni una responsabilidad individual confirmada.",
+  "public_release": {
+    "status": "borrador_para_revision",
+    "privacy": "Se omiten contactos personales, nombre de planta, identificadores de cámaras, series de producción, volúmenes exactos de procesamiento, imágenes y métricas internas.",
+    "action_before_publishing": "Confirmar permiso para describir casos industriales, participación individual, modelos/datos divulgables y denominaciones de las publicaciones."
+  },
+  "projects": [
+    {
+      "id": "industrial_vlm_visual_analysis",
+      "title": "Análisis de imágenes industriales mediante modelos visión-lenguaje (VLM)",
+      "display_name": "Caso VLM industrial (versión anonimizada)",
+      "category": [
+        "IA generativa multimodal",
+        "visión por computadora",
+        "integración de software"
+      ],
+      "context": "Caso técnico de supervisión visual de procesos industriales en el que se estudia la interpretación semántica de imágenes y la entrega de resultados estructurados para consulta o integración.",
+      "problem": "Interpretar escenas visuales de un proceso industrial de manera consistente y transmitir hallazgos en un formato utilizable por otros sistemas, pese a variaciones de iluminación, residuos, oclusiones y condiciones cambiantes de la escena.",
+      "goal": "Explorar y documentar un flujo de procesamiento multimodal capaz de analizar imágenes, diferenciar condiciones observables y producir salidas estructuradas verificables.",
+      "approach": {
+        "cv_verified_general_experience": [
+          "El CV declara integración de VLMs para interpretar imágenes industriales.",
+          "El CV declara diseño de prompts y validación de resultados JSON.",
+          "El CV declara LoRA y evaluación comparativa de modelos como experiencia general, sin vincularlas inequívocamente a este caso específico.",
+          "El CV declara desarrollo de servicios de inferencia y APIs REST para conectar IA con aplicaciones C#/.NET."
+        ],
+        "case_context_from_prior_technical_review": [
+          "Se examinó un flujo de trabajo para obtener imágenes, realizar análisis visual y generar datos interpretables sobre estados o eventos.",
+          "La estimación cuantitativa de variables geométricas, cuando proceda, es un problema distinto de la clasificación semántica y requiere lógica específica y calibración.",
+          "Se consideraron retos visuales por material residual, efectos de enfriamiento, condiciones térmicas y obstrucciones."
+        ],
+        "illustrative_architecture_not_deployment_claim": [
+          "Entrada de imagen y verificación de calidad.",
+          "Preprocesamiento o extracción de región de interés cuando corresponda.",
+          "Inferencia visual mediante algoritmo de visión y/o VLM según el objetivo.",
+          "Normalización y validación de respuesta JSON contra esquema.",
+          "Persistencia de resultados, trazabilidad por evento e integración con consumidores."
+        ]
+      },
+      "tools_and_technologies": {
+        "explicit_in_cv_as_general_experience": [
+          "VLM",
+          "prompt engineering",
+          "JSON",
+          "Python",
+          "APIs REST",
+          "C#/.NET",
+          "LoRA",
+          "OpenCV"
+        ],
+        "case_specific_implementation_not_confirmed": [
+          "versión exacta del VLM",
+          "modelo final seleccionado",
+          "configuración LoRA",
+          "modelo de segmentación",
+          "plataforma de despliegue específica"
+        ]
+      },
+      "candidate_involvement": {
+        "supported": "Se cuenta con evidencia conversacional de revisión y documentación técnica del caso. Por separado, el CV acredita experiencia general con VLMs, prompts JSON, LoRA y APIs.",
+        "not_confirmed": [
+          "Que el candidato sea autor único del modelo VLM.",
+          "Que haya entrenado personalmente el modelo concreto de este caso.",
+          "Que haya implementado toda la cadena en producción.",
+          "Que haya diseñado personalmente la segmentación o el cálculo geométrico."
+        ]
+      },
+      "evaluation": {
+        "confirmed_numeric_results": [],
+        "proposed_not_measured": [
+          "Precision, recall y F1 por categoría visual con ground truth revisado.",
+          "Tasa de JSON válido y cumplimiento de esquema de salida.",
+          "Consistencia entre imágenes relacionadas y tasa de descripciones no fundamentadas.",
+          "Latencia p50/p95 por etapa y costo por análisis cuando se use una API externa."
+        ]
+      },
+      "limitations": [
+        "El material revisado no acredita métricas de producción públicamente divulgables.",
+        "No asociar el rendimiento de un checkpoint específico a todo el sistema sin evaluación independiente.",
+        "No divulgar ubicación, clientes, identificadores de equipo ni volúmenes operativos sin autorización.",
+        "No afirmar que un VLM por sí solo mide niveles o temperaturas físicas."
+      ],
+      "public_description": "Caso de análisis visual industrial con modelos visión-lenguaje, prompts y salidas estructuradas. Permite explicar alternativas arquitectónicas, criterios de validación y limitaciones técnicas; la responsabilidad personal sobre cada subcomponente debe confirmarse antes de atribuirla.",
+      "relevant_source_ids": [
+        "project_vlm_scope",
+        "project_vlm_architecture",
+        "project_vlm_evaluation",
+        "project_vlm_responsibility"
+      ],
+      "provenance": [
+        {
+          "kind": "cv",
+          "document": "CV_José_David_Velazco_Muñoz_26.pdf",
+          "pages": [
+            1
+          ],
+          "support": "Experiencia general en VLMs, prompts JSON, LoRA, APIs y visión industrial"
+        },
+        {
+          "kind": "context",
+          "document": "Especificación técnica previamente comentada por el candidato; versión no incorporada al repositorio público",
+          "support": "Problema, elementos de arquitectura de referencia y limitaciones visuales"
+        },
+        {
+          "kind": "inference",
+          "document": "Buenas prácticas para documentar y evaluar sistemas",
+          "support": "Pasos de arquitectura ilustrativa y métricas propuestas, no implementaciones verificadas"
+        }
+      ],
+      "pending_verification": [
+        "Precisar tareas realizadas personalmente por el candidato.",
+        "Precisar decisiones técnicas implementadas frente a decisiones solo propuestas.",
+        "Confirmar qué cifras, imágenes y denominaciones se pueden publicar."
+      ]
+    },
+    {
+      "id": "cnn_neuroevolution_thesis",
+      "title": "Reducción de parámetros en una CNN mediante neuroevolución",
+      "display_name": "Tesis de Maestría — Optimización de CNN con neuroevolución",
+      "category": [
+        "Deep Learning",
+        "AutoML",
+        "neuroevolución",
+        "investigación aplicada"
+      ],
+      "context": "Proyecto de tesis de Maestría en Inteligencia Artificial en la Universidad Veracruzana; periodo académico julio de 2022 a julio de 2024, según CV.",
+      "problem": "Reducir la complejidad de una red convolucional destinada a inferir el ángulo de dirección a partir de imágenes en un escenario de conducción autónoma.",
+      "goal": "Optimizar la arquitectura de una CNN mediante neuroevolución para disminuir la cantidad de parámetros conservando la capacidad predictiva.",
+      "approach": {
+        "confirmed_by_cv": [
+          "Desarrollo de una CNN para estimar el ángulo de dirección en un contexto de conducción autónoma.",
+          "Uso de neuroevolución para optimizar arquitectura y reducir el número de parámetros manteniendo la capacidad predictiva.",
+          "Experiencia académica relacionada con diseño, entrenamiento, optimización y evaluación de modelos de IA."
+        ],
+        "architectural_details_not_supplied": [
+          "Dataset y procedimiento exacto de partición.",
+          "Espacio de búsqueda, representación genética y operador evolutivo concreto.",
+          "Topología inicial/final, función de pérdida, hiperparámetros y hardware.",
+          "Método estadístico para comparar generaciones y evaluar generalización."
+        ]
+      },
+      "tools_and_technologies": {
+        "confirmed_methods": [
+          "CNN",
+          "Deep Learning",
+          "neuroevolución",
+          "optimización de arquitectura"
+        ],
+        "general_cv_skills_not_attributed_to_thesis_without_proof": [
+          "Python",
+          "TensorFlow",
+          "PyTorch",
+          "Scikit-learn"
+        ]
+      },
+      "candidate_involvement": {
+        "supported": "El documento de CV presenta este trabajo como su proyecto de tesis de Maestría y declara el desarrollo de la CNN y la aplicación de neuroevolución.",
+        "not_confirmed": [
+          "Autoría específica en una publicación más allá de lo declarado en el CV",
+          "Tamaño del equipo y colaboración",
+          "Configuración experimental y cifras de resultados"
+        ]
+      },
+      "evaluation": {
+        "confirmed_numeric_results": [],
+        "qualitative_result_reported_in_cv": "Objetivo/resultado descrito en el CV: reducción de parámetros conservando capacidad predictiva. No se facilitan datos numéricos para cuantificar la mejora.",
+        "proposed_not_measured": [
+          "Número de parámetros antes y después y porcentaje de reducción.",
+          "MAE/MSE del ángulo predicho en un conjunto de prueba aislado.",
+          "Latencia y memoria de inferencia bajo el mismo hardware.",
+          "Variabilidad de resultados entre ejecuciones y compromiso precisión-complejidad."
+        ]
+      },
+      "publication_as_listed_in_cv": {
+        "year": 2024,
+        "title": "Reducción de parámetros mediante neuroevolución en una CNN para estimación del ángulo de dirección",
+        "citation_label_in_cv": "Pattern Recognition",
+        "doi_as_listed_in_cv": "10.1007/978-3-031-62836-8_35",
+        "notice": "Referencia transcrita del CV sin validación bibliográfica externa; evitar afirmar revista/indexación/autores sin cotejar el artículo."
+      },
+      "limitations": [
+        "No se disponen de cifras de reducción, curvas experimentales ni métricas de error en el CV.",
+        "No se identificó dataset, técnica evolutiva precisa ni librería usada específicamente en la tesis.",
+        "No confundir métricas de evaluación sugeridas con resultados efectivamente obtenidos."
+      ],
+      "public_description": "Tesis de Maestría en IA centrada en predicción del ángulo de dirección con una CNN y optimización de su arquitectura mediante neuroevolución para reducir parámetros preservando el desempeño predictivo, según CV.",
+      "relevant_source_ids": [
+        "project_thesis_scope",
+        "project_thesis_method",
+        "project_thesis_evaluation",
+        "project_thesis_publication"
+      ],
+      "provenance": [
+        {
+          "kind": "cv",
+          "document": "CV_José_David_Velazco_Muñoz_26.pdf",
+          "pages": [
+            1,
+            2
+          ],
+          "support": "Tesis, formación académica y publicación listada"
+        },
+        {
+          "kind": "inference",
+          "document": "Propuesta de indicadores para diseño de evaluación",
+          "support": "Métricas por medir, sin resultados atribuidos"
+        }
+      ],
+      "pending_verification": [
+        "Añadir documento de tesis o abstract aprobado para precisar arquitectura y proceso.",
+        "Confirmar métricas numéricas y condiciones de la comparación.",
+        "Revisar datos bibliográficos exactos de la publicación y autoría."
+      ]
+    }
+  ]
+}

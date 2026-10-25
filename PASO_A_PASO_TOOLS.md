@@ -1,6 +1,6 @@
 # Reto Banorte — etapa 2: herramientas y function calling
 
-Este ZIP contiene una evolución de la versión **Dos Proyectos**. Se conservaron las 33 fuentes del CV y las dos fichas técnicas. El LLM GPT-6 Luna ahora puede **seleccionar herramientas** que consultan exclusivamente la información pública revisable del candidato.
+
 
 ## ¿Qué cambió?
 

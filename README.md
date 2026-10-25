@@ -6,7 +6,7 @@
 
 Proyecto de ingeniería de software e inteligencia artificial desarrollado como solución independiente en el contexto del **Reto IA Banorte**.
 
-[Demostración](#demostracion-de-la-solucion) · [Arquitectura](#arquitectura) · [Decisiones técnicas](#decisiones-tecnicas) · [Ejecución local](#ejecucion-local) · [Evaluación](#evaluacion-y-resultados)
+[Demostración](#demostracion-de-la-solucion) · [Prueba en la plataforma de Banorte](#demostracion-en-la-interfaz-de-banorte) · [Arquitectura](#arquitectura) · [Decisiones técnicas](#decisiones-tecnicas) · [Evaluación](#evaluacion-y-resultados)
 
 </div>
 
@@ -100,6 +100,82 @@ La respuesta observada incluyó un objeto `usage` con **3,463 tokens de entrada*
 
 La respuesta puede cambiar en redacción entre ejecuciones, pero se espera que conserve los hechos recuperados, la delimitación de evidencia y el formato de respuesta.
 
+### Demostración en la interfaz de Banorte
+
+Además de las pruebas directas por HTTP, se realizó una **conversación real de tres turnos en la interfaz de agentes utilizada para el Reto IA Banorte**. La plataforma consultó el servicio publicado en Cloud Run, cuyo identificador de modelo es `cv-agent-v1`.
+
+La transcripción siguiente fue obtenida durante la interacción con el agente. Se reproduce para documentar el comportamiento observado; **no es una conversación simulada ni un resultado generado especialmente para este README**.
+
+#### Turno 1. Presentación y experiencia profesional
+
+**Usuario**
+
+> ¿Quién es José David Velazco Muñoz y cuál es su experiencia profesional?
+
+**Agente**
+
+> José David Velazco Muñoz es Ingeniero en Mecatrónica y Maestro en Inteligencia Artificial. Su experiencia profesional se centra en desarrollar e integrar soluciones de aprendizaje automático, aprendizaje profundo, visión artificial e IA generativa en entornos industriales.
+>
+> Desde octubre de 2024, según el CV, trabaja como Ingeniero de Visión Artificial e Inteligencia Artificial en Si-Ti | Ternium, en Monterrey. Su trayectoria descrita incluye trabajo con LLMs, VLMs, arquitecturas RAG, adaptación con LoRA y agentes conectados a herramientas mediante MCP, además de integrar modelos con aplicaciones de software. El CV no identifica nominalmente los proyectos industriales ni precisa la fecha de corte de esa experiencia.
+>
+> **Fuentes:** profile, current_role, masters, bachelors.
+
+**Qué evidencia:** recuperación de información del perfil, formación académica, experiencia laboral y referencias explícitas a los identificadores de las fuentes utilizadas.
+
+#### Turno 2. Recuperación de proyectos
+
+**Usuario**
+
+> ¿Cuáles son sus proyectos de inteligencia artificial?
+
+**Agente**
+
+> En la información disponible aparecen dos proyectos de inteligencia artificial:
+>
+> * **Análisis de imágenes industriales con modelos visión-lenguaje (VLM):** caso centrado en interpretar escenas industriales y generar salidas estructuradas. La documentación menciona VLM, prompts y JSON; sin embargo, no confirma qué partes implementó personalmente José ni que el flujo completo se haya desplegado en producción. No hay métricas numéricas documentadas.
+> * **Reducción de parámetros de una CNN mediante neuroevolución:** su tesis de maestría, orientada a predecir el ángulo de dirección a partir de imágenes y optimizar la arquitectura de la red para reducir parámetros preservando la capacidad predictiva. No se proporcionan cifras para cuantificar los resultados.
+>
+> **Fuentes:** project_vlm_scope, project_vlm_responsibility, project_thesis_scope, project_thesis_method, project_thesis_evaluation.
+
+**Qué evidencia:** selección de dos proyectos pertinentes, diferenciación de sus objetivos técnicos y reconocimiento explícito de que no están documentadas ciertas atribuciones, despliegues o métricas.
+
+#### Turno 3. Pregunta de seguimiento contextual
+
+**Usuario**
+
+> Explícame con más detalle el segundo proyecto.
+
+**Agente**
+
+> El proyecto fue una tesis de Maestría en Inteligencia Artificial sobre **reducir la complejidad de una red neuronal convolucional (CNN) para predecir el ángulo de dirección a partir de imágenes**, en un contexto de conducción autónoma.
+>
+> La idea central era usar **neuroevolución** para optimizar la arquitectura de la CNN: explorar configuraciones de red y buscar una que tuviera menos parámetros, procurando conservar su capacidad predictiva. El CV describe el desarrollo de la CNN y la aplicación de neuroevolución como parte de la tesis.
+>
+> La documentación no especifica cómo se codificó la búsqueda evolutiva, qué conjunto de datos o arquitectura exacta se usó, ni los resultados cuantitativos. Por tanto, no se puede afirmar cuánto se redujeron los parámetros ni cuál fue el error de predicción. **Fuentes: project_thesis_scope, project_thesis_method, project_thesis_evaluation.**
+
+**Qué evidencia:** en esta secuencia, el agente interpretó correctamente la expresión **«el segundo proyecto»** como una referencia a la tesis presentada en el turno anterior. La respuesta profundizó en el propósito de la CNN y la neuroevolución sin inventar porcentajes ni medidas de error.
+
+#### Resultados observados en la interfaz
+
+| Comprobación                         | Evidencia en la conversación                                    | Resultado observado          |
+| ------------------------------------ | --------------------------------------------------------------- | ---------------------------- |
+| Presentación del candidato           | Identifica formación y experiencia profesional.                 | Correcto en el ejemplo       |
+| Recuperación de proyectos            | Expone dos proyectos y sus fuentes.                             | Correcto en el ejemplo       |
+| Seguimiento contextual               | Interpreta «el segundo proyecto» como la tesis.                 | Correcto en el ejemplo       |
+| Trazabilidad                         | Incluye identificadores de fuentes en las tres respuestas.      | Presente                     |
+| Manejo de información no documentada | Evita adjudicar métricas, autorías y resultados no acreditados. | Presente                     |
+| Integración con cliente externo      | Tres respuestas obtenidas mediante la interfaz del reto.        | Demostrada a nivel funcional |
+
+Esta interacción constituye una **demostración funcional cualitativa**, no una medición estadística de exactitud. Tampoco permite distinguir por sí sola si el contexto llegó mediante retransmisión de la conversación o mediante `previous_response_id`. Los logs independientes del servicio confirmaron previamente el uso de herramientas mediante Function Calling, pero no se adjuntan trazas internas de estas tres respuestas.
+
+#### Decisiones de integración para la plataforma
+
+* **Conexión mediante URL base:** la plataforma agrega `/responses` a `https://banorte-cv-agent-347092849575.us-central1.run.app/v1`, de acuerdo con el endpoint expuesto por FastAPI.
+* **Modelo estable:** el cliente utiliza `cv-agent-v1`, un identificador propio del servicio que mantiene separado al cliente del modelo subyacente del proveedor.
+* **Autenticación Bearer:** la plataforma transmite una clave de acceso del agente, distinta de `OPENAI_API_KEY`. Ningún valor secreto se incorpora a esta demostración.
+* **Conversación de seguimiento:** la tercera pregunta muestra continuidad contextual en la sesión probada. Como el backend no dispone de almacenamiento compartido persistente, una estrategia de **retransmisión de historial** es apropiada para clientes compatibles.
+* **Alcance del contrato:** esta demostración valida preguntas y respuestas de texto; no demuestra compatibilidad con archivos, herramientas del cliente, streaming progresivo ni otras modalidades.
+
 ### Escenarios complementarios para la demostración
 
 | Pregunta                                              | Comportamiento esperado                                                                   | Qué se valida                                          |
@@ -163,19 +239,15 @@ Estas decisiones buscan equilibrar **funcionalidad, verificabilidad, complejidad
 
 ### Por qué no se implementó un RAG vectorial
 
-El corpus disponible se limita a un perfil profesional y dos fichas principales de proyectos. Para ese volumen, una recuperación local con normalización de texto, coincidencias ponderadas y fuentes identificadas constituye una línea base razonable.
-
-La aplicación sigue un **patrón de recuperación fundamentada**, pero **no declara una arquitectura RAG vectorial ni utiliza embeddings en esta versión**.
+El corpus disponible se limita a un perfil profesional y dos fichas principales de proyectos. Para ese volumen, una recuperación local con normalización de texto, coincidencias ponderadas y fuentes identificadas constituye una línea base razonable. La aplicación sigue un **patrón de recuperación fundamentada**, pero **no declara una arquitectura RAG vectorial ni utiliza embeddings en esta versión**.
 
 La decisión se revisaría si el corpus aumentara o si una evaluación demostrara fallos de recuperación; en ese caso se compararían recuperación léxica, búsqueda vectorial e híbrida mediante métricas como `recall@k`.
 
 ### Por qué Function Calling y no un agente autónomo general
 
-El reto exige responder con datos del CV, no navegar libremente por internet ni ejecutar acciones sobre sistemas de terceros. Limitar la selección a herramientas internas favorece la interpretación de resultados y el control operativo.
+El reto exige responder con datos del candidato, no navegar libremente por internet ni ejecutar acciones sobre sistemas de terceros. Limitar la selección a herramientas internas favorece la interpretación de resultados y el control operativo.
 
-Se restringen las rondas y las llamadas a herramientas para evitar bucles indefinidos.
-
-La lógica puede requerir **más de una solicitud al proveedor por pregunta**, lo cual influye en latencia, costos y límites de tasa. Los errores `429` observados durante las primeras pruebas motivaron un manejo de reintentos limitado y una evaluación del consumo; posteriormente, el aumento de límites de la cuenta permitió completar una evaluación remota sin errores HTTP.
+Se restringen las rondas y las llamadas a herramientas para evitar bucles indefinidos. La lógica puede requerir **más de una solicitud al proveedor por pregunta**, lo cual influye en latencia, costos y límites de tasa. Los errores `429` observados durante las primeras pruebas motivaron un manejo de reintentos limitado y una evaluación del consumo; posteriormente, el aumento de límites de la cuenta permitió completar una evaluación remota sin errores HTTP.
 
 ### Compatibilidad de integración
 
@@ -191,7 +263,7 @@ La API del servicio implementa un **subconjunto textual de Open Responses**:
 | Continuidad               | `previous_response_id`, con historial temporal en memoria del proceso      |
 | Streaming                 | SSE emitido tras completar la inferencia; no genera tokens progresivamente |
 
-**No se afirma compatibilidad total** con todas las modalidades y capacidades de Open Responses. La integración final debe verificarse en el cliente evaluador concreto.
+**No se afirma compatibilidad total** con todas las modalidades y capacidades de Open Responses. Se verificó funcionalmente una conversación de tres turnos desde la interfaz de agentes de Banorte; otras modalidades y configuraciones requieren pruebas adicionales.
 
 ## Herramientas disponibles
 
@@ -365,7 +437,7 @@ Se diseñaron pruebas de componentes y un conjunto de **16 casos conversacionale
 
 El único caso señalado como `FAIL` se relacionó con una pregunta sobre una publicación de 2024 asociada a la tesis. El evaluador utiliza palabras clave; por ello, **un `FAIL` no prueba automáticamente que la respuesta sea falsa**, pero exige revisar las fuentes, el criterio y la recuperación utilizada.
 
-La batería constituye una **evaluación exploratoria**, no una medición exhaustiva de factualidad, seguridad, cobertura semántica ni ausencia de alucinaciones.
+La batería constituye una **evaluación exploratoria**, no una medición exhaustiva de factualidad, seguridad, cobertura semántica ni ausencia de alucinaciones. La conversación de tres turnos descrita en la sección de demostración es una prueba de integración adicional y **no se suma a los 16 casos automatizados**.
 
 Ejecutar pruebas unitarias:
 
@@ -385,7 +457,7 @@ Las pruebas de extremo a extremo están implementadas en `scripts/evaluate.py`. 
 * **Sesiones:** `previous_response_id` utiliza memoria local del proceso, con caducidad; no garantiza continuidad entre instancias, reinicios o nuevas revisiones.
 * **Streaming:** la aplicación devuelve una secuencia SSE diferida, no tokens en tiempo real a medida que el modelo los produce.
 * **Proveedor LLM:** la aplicación depende de disponibilidad, cuota, tarifas y límites de la API externa; una consulta puede producir varias llamadas al modelo.
-* **Compatibilidad:** la interfaz sigue un subconjunto textual de Open Responses; requiere validación específica contra el cliente de evaluación de Banorte.
+* **Compatibilidad:** se validó una conversación textual de tres turnos desde la interfaz de Banorte, pero no archivos, streaming progresivo ni compatibilidad general con todas las opciones de Open Responses.
 * **Herramientas y alcance:** no se implementa un servidor MCP, protocolo A2A, acciones bancarias ni navegación web autónoma.
 * **Persistencia:** el campo `store` de la respuesta pública refleja el estado de sesión en esta API; no debe confundirse con el parámetro `store` enviado al proveedor externo, que se configura por separado.
 
@@ -404,4 +476,5 @@ Las pruebas de extremo a extremo están implementadas en `scripts/evaluate.py`. 
 **José David Velazco Muñoz**
 Ingeniero en Mecatrónica y Maestro en Inteligencia Artificial.
 
-Este repositorio documenta una solución técnica **independiente**
+Este repositorio documenta una solución técnica **independiente**, preparada en el contexto de una participación en el Reto IA Banorte. No es un producto oficial de Banorte ni implica afiliación o respaldo institucional.
+
